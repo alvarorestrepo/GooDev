@@ -15,7 +15,7 @@ class CreateSliderprincipalsTable extends Migration
     {
         Schema::create('sliderprincipals', function (Blueprint $table) {
             $table->id();
-            $table->string('nombre');
+            $table->string('titulo');
             $table->string('imagen');
             $table->timestamps();
         });
