@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Sliderprincipal;
+use App\Nuestrosskill;
 use Illuminate\Http\Request;
 
-class SliderprincipalController extends Controller
+class NuestrosskillController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,7 @@ class SliderprincipalController extends Controller
      */
     public function index()
     {
-        $sliderprincipal = Sliderprincipal::all();
-        return view('sliderprincipal.index', compact('sliderprincipal'));
+        //
     }
 
     /**
@@ -25,7 +24,7 @@ class SliderprincipalController extends Controller
      */
     public function create()
     {
-        return view('sliderprincipal.create');
+        //
     }
 
     /**
@@ -42,10 +41,10 @@ class SliderprincipalController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Sliderprincipal  $sliderprincipal
+     * @param  \App\Nuestrosskill  $nuestrosskill
      * @return \Illuminate\Http\Response
      */
-    public function show(Sliderprincipal $sliderprincipal)
+    public function show(Nuestrosskill $nuestrosskill)
     {
         //
     }
@@ -53,10 +52,10 @@ class SliderprincipalController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Sliderprincipal  $sliderprincipal
+     * @param  \App\Nuestrosskill  $nuestrosskill
      * @return \Illuminate\Http\Response
      */
-    public function edit(Sliderprincipal $sliderprincipal)
+    public function edit(Nuestrosskill $nuestrosskill)
     {
         //
     }
@@ -65,10 +64,10 @@ class SliderprincipalController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Sliderprincipal  $sliderprincipal
+     * @param  \App\Nuestrosskill  $nuestrosskill
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Sliderprincipal $sliderprincipal)
+    public function update(Request $request, Nuestrosskill $nuestrosskill)
     {
         //
     }
@@ -76,10 +75,10 @@ class SliderprincipalController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Sliderprincipal  $sliderprincipal
+     * @param  \App\Nuestrosskill  $nuestrosskill
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Sliderprincipal $sliderprincipal)
+    public function destroy(Nuestrosskill $nuestrosskill)
     {
         //
     }
