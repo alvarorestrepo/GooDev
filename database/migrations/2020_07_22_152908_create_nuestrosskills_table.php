@@ -13,8 +13,17 @@ class CreateNuestrosskillsTable extends Migration
      */
     public function up()
     {
+        Schema::create('categoriaskills', function (Blueprint $table) {
+            $table->id();
+            $table->string('nombre');
+            $table->timestamps();
+        });
+
         Schema::create('nuestrosskills', function (Blueprint $table) {
             $table->id();
+            $table->string('nombre');
+            $table->string('imagen');
+            $table->foreignId('categoriaskills')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -27,5 +36,6 @@ class CreateNuestrosskillsTable extends Migration
     public function down()
     {
         Schema::dropIfExists('nuestrosskills');
+        Schema::dropIfExists('categoriaskills');
     }
 }
