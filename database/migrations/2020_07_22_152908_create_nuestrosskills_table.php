@@ -22,8 +22,9 @@ class CreateNuestrosskillsTable extends Migration
         Schema::create('nuestrosskills', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
+            $table->string('descripcion');
             $table->string('imagen');
-            $table->foreignId('categoriaskills')->constrained()->onDelete('cascade');
+            $table->foreignId('categoriaskills_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }

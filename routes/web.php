@@ -41,3 +41,12 @@ Route::get('/categoriaskill/{categoriaskill}/edit', 'CategoriaskillController@ed
 Route::put('/categoriaskill/{categoriaskill}', 'CategoriaskillController@update')->name('categoriaskill.update');
 Route::delete('/categoriaskill/{categoriaskill}', 'CategoriaskillController@destroy')->name('categoriaskill.destroy');
 Route::get('/categoriaskill/{categoriaskill}', 'CategoriaskillController@show')->name('categoriaskill.show');
+
+// Rutas para Nuestrosskills
+Route::get('/nuestrosskill','NuestrosskillController@index')->name('nuestrosskill.index');
+Route::get('/nuestrosskill/create','NuestrosskillController@create')->name('nuestrosskill.create');
+Route::post('/nuestrosskill','NuestrosskillController@store')->name('nuestrosskill.store');
+Route::get('/nuestrosskill/{nuestrosskill}/edit','NuestrosskillController@edit')->name('nuestrosskill.edit');
+Route::put('/nuestrosskill/{nuestrosskill}','NuestrosskillController@update')->name('nuestrosskill.update');
+Route::delete('/nuestrosskill/{nuestrosskill}','NuestrosskillController@destroy')->name('nuestrosskill.destroy');
+Route::get('/nuestrosskill/{nuestrosskill}','NuestrosskillController@show')->name('nuestrosskill.show');
