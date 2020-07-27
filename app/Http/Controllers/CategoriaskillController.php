@@ -57,7 +57,7 @@ class CategoriaskillController extends Controller
      */
     public function show(Categoriaskill $categoriaskill)
     {
-        return $categoriaskill;
+        return view('categoriaskill.show',compact('categoriaskill'));
     }
 
     /**
@@ -102,6 +102,8 @@ class CategoriaskillController extends Controller
      */
     public function destroy(Categoriaskill $categoriaskill)
     {
-        //
+        $categoriaskill->delete();
+
+        return redirect()->route('categoriaskill.index');
     }
 }
