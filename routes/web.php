@@ -50,3 +50,12 @@ Route::get('/nuestrosskill/{nuestrosskill}/edit','NuestrosskillController@edit')
 Route::put('/nuestrosskill/{nuestrosskill}','NuestrosskillController@update')->name('nuestrosskill.update');
 Route::delete('/nuestrosskill/{nuestrosskill}','NuestrosskillController@destroy')->name('nuestrosskill.destroy');
 Route::get('/nuestrosskill/{nuestrosskill}','NuestrosskillController@show')->name('nuestrosskill.show');
+
+// Rutas para Nuestrosskills
+Route::get('/nuestraexperiencia','NuestraexperienciaController@index')->name('nuestraexperiencia.index');
+Route::get('/nuestraexperiencia/create','NuestraexperienciaController@create')->name('nuestraexperiencia.create');
+Route::post('/nuestraexperiencia','NuestraexperienciaController@store')->name('nuestraexperiencia.store');
+Route::get('/nuestraexperiencia/{nuestraexperiencia}/edit','NuestraexperienciaController@edit')->name('nuestraexperiencia.edit');
+Route::put('/nuestraexperiencia/{nuestraexperiencia}','NuestraexperienciaController@update')->name('nuestraexperiencia.update');
+Route::delete('/nuestraexperiencia/{nuestraexperiencia}','NuestraexperienciaController@destroy')->name('nuestraexperiencia.destroy');
+Route::get('/nuestraexperiencia/{nuestraexperiencia}','NuestraexperienciaController@show')->name('nuestraexperiencia.show');
