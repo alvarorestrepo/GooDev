@@ -134,15 +134,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </a>
               </li>
               <li class="nav-item">
-              <a href="{{route('descubreservicios.index')}}" class="nav-link">
+              <a href="{{route('descubreservicio.index')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Descubre Servicios</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Mira los Proyectos</p>
                 </a>
               </li>
               <li class="nav-item">

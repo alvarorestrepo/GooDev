@@ -31,7 +31,13 @@ Route::delete('/sliderprincipal/{sliderprincipal}', 'SliderprincipalController@d
 Route::get('/sliderprincipal/{sliderprincipal}', 'SliderprincipalController@show')->name('sliderprincipal.show');
 
 // Rutas para Descubreservicios
-Route::get('/descubreservicios', 'DescubreservicioController@index')->name('descubreservicios.index');
+Route::get('/descubreservicio', 'DescubreservicioController@index')->name('descubreservicio.index');
+Route::get('/descubreservicio/create', 'DescubreservicioController@create')->name('descubreservicio.create');
+Route::post('/descubreservicio', 'DescubreservicioController@store')->name('descubreservicio.store');
+Route::get('/descubreservicio/{descubreservicio}/edit', 'DescubreservicioController@edit')->name('descubreservicio.edit');
+Route::put('/descubreservicio/{descubreservicio}', 'DescubreservicioController@update')->name('descubreservicio.update');
+Route::delete('/descubreservicio/{descubreservicio}', 'DescubreservicioController@destroy')->name('descubreservicio.destroy');
+Route::get('/descubreservicio/{descubreservicio}', 'DescubreservicioController@show')->name('descubreservicio.show');
 
 // Rutas para Categoriasskills
 Route::get('/categoriaskill', 'CategoriaskillController@index')->name('categoriaskill.index');
