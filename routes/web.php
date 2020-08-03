@@ -59,3 +59,12 @@ Route::get('/nuestraexperiencia/{nuestraexperiencia}/edit','NuestraexperienciaCo
 Route::put('/nuestraexperiencia/{nuestraexperiencia}','NuestraexperienciaController@update')->name('nuestraexperiencia.update');
 Route::delete('/nuestraexperiencia/{nuestraexperiencia}','NuestraexperienciaController@destroy')->name('nuestraexperiencia.destroy');
 Route::get('/nuestraexperiencia/{nuestraexperiencia}','NuestraexperienciaController@show')->name('nuestraexperiencia.show');
+
+// Rutas para Asociate
+Route::get('/asociate','AsociateController@index')->name('asociate.index');
+Route::get('/asociate/create','AsociateController@create')->name('asociate.create');
+Route::post('/asociate','AsociateController@store')->name('asociate.store');
+Route::get('/asociate/{asociate}/edit','AsociateController@edit')->name('asociate.edit');
+Route::put('/asociate/{asociate}','AsociateController@update')->name('asociate.update');
+Route::delete('/asociate/{asociate}','AsociateController@destroy')->name('asociate.destroy');
+Route::get('/asociate/{asociate}','AsociateController@show')->name('asociate.show');
